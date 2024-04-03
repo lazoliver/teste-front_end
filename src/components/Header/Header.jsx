@@ -1,7 +1,7 @@
 import "./Header.css";
 
 import Logo from "../../assets/logo.svg";
-import LogoMobile from "../../assets/mobile_logo.svg";
+import MobileLogo from "../../assets/mobile_logo.svg";
 import Cart from "../../assets/cart.svg";
 import CartCounter from "../../assets/cart_counter.svg";
 import SearchIcon from "../../assets/search_icon.svg";
@@ -13,7 +13,7 @@ export default function Header() {
         <a href="/" aria-label="Electrolux - Página Inicial">
           <picture>
             <source media="(min-width: 769px)" srcSet={Logo} alt="Electrolux" />
-            <img src={LogoMobile} alt="Electrolux Mobile" />
+            <img src={MobileLogo} alt="Electrolux Mobile" />
           </picture>
         </a>
       </section>
