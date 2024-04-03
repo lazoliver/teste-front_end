@@ -1,0 +1,70 @@
+.header {
+  display: grid;
+  max-height: 80px;
+  padding: 8px 20px;
+}
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 26px;
+}
+.logo a {
+  display: flex;
+  width: fit-content;
+}
+.cart {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  justify-content: end;
+  padding: 8px 0 1px;
+}
+.cart a {
+  align-items: center;
+  height: 18px;
+}
+.search {
+  border-bottom: 1px solid #7a7a7a;
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  height: 22px;
+  padding-top: 13px;
+}
+.search input {
+  font: 400 13px/18px "Nunito", sans-serif;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.search input,
+.search button {
+  background-color: #fff;
+  border: none;
+}
+@media (min-width: 769px) {
+  .header {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1161px;
+    padding: 24px 20px;
+  }
+  .logo {
+    order: 1;
+  }
+  .search {
+    border: 1px solid #acacac;
+    height: 30px;
+    min-width: 60%;
+    order: 2;
+    padding-top: 0;
+  }
+  .search input {
+    padding: 0 6px;
+  }
+  .cart {
+    order: 3;
+  }
+}
