@@ -43,7 +43,7 @@
   background-color: #fff;
   border: none;
 }
-@media (min-width: 769px) {
+@media (min-width: 920px) {
   .header {
     display: flex;
     margin: 0 auto;

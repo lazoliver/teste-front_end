@@ -63,7 +63,7 @@
   text-transform: uppercase;
   width: 100%;
 }
-@media (min-width: 769px) {
+@media (min-width: 920px) {
   .offers {
     margin: 0 auto;
     max-width: 1161px;
