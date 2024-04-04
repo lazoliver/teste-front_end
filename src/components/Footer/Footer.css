@@ -15,19 +15,32 @@
 .footer div ul {
   display: flex;
   flex-direction: column;
-  font: 400 13px/14px "Open Sans", sans-serif;
   gap: 6px;
   padding: 21px 0 33px;
 }
-.footer a {
+.footer div ul li a{
   color: inherit;
+  font: 400 13px/12px "Open Sans", sans-serif;
 }
 .footer .container .stamps {
+  align-items: center;
   background-color: #fff;
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
   padding: 6px 0 11px;
+}
+.footer .container .stamps img:nth-child(1) {
+  height: 76px;
+  width: 61px;
+}
+.footer .container .stamps img:nth-child(2) {
+  height: 50px;
+  width: 44px;
+}
+.footer .container .stamps img:nth-child(2) {
+  height: 62px;
+  width: 103px;
 }
 @media (min-width: 500px) and (max-width:919px) {
   .footer .container{
@@ -64,5 +77,17 @@
     min-width: 381px;
     margin-top: 19px;
     padding: 0 24px;
+  }
+  .footer .container .stamps img:nth-child(1) {
+    height: 106px;
+    width: 85px;
+  }
+  .footer .container .stamps img:nth-child(2) {
+    height: 62px;
+    width: 69px;
+  }
+  .footer .container .stamps img:nth-child(2) {
+    height: 88px;
+    width: 145px;
   }
 }

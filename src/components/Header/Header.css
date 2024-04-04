@@ -43,6 +43,10 @@
   background-color: #fff;
   border: none;
 }
+.search button img{
+  height: 18px;
+  width: 18px;
+}
 @media (min-width: 920px) {
   .header {
     display: flex;
@@ -52,7 +56,9 @@
     padding: 24px 20px;
   }
   .logo {
+    height: 34px;
     order: 1;
+    width: 150px;
   }
   .search {
     border: 1px solid #acacac;

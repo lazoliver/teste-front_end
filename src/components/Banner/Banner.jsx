@@ -1,7 +1,7 @@
 import "./Banner.css";
 
-import ImageBanner from "../../assets/banner.svg";
-import MobileImageBanner from "../../assets/mobile_banner.svg";
+import ImageBanner from "../../assets/images/banner.svg";
+import MobileImageBanner from "../../assets/images/mobile_banner.svg";
 
 export default function Banner() {
   return (
