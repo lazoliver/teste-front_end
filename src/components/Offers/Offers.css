@@ -7,7 +7,8 @@
 }
 .offers h2 {
   border-bottom: 3.5px solid #c0c0c0;
-  font: 800 18px/25px inherit;
+  font: 800 18px/25px "Open Sans", sans-serif;
+  margin-left: 13px;
   padding-bottom: 3px;
   width: fit-content;
 }
@@ -71,7 +72,7 @@
   .offers h2 {
     border-bottom: 4px solid #c0c0c0;
     font: 800 20px/27px "Open Sans", sans-serif;
-    padding-bottom: 3px;
+    margin-left: 13px;
     width: fit-content;
   }
   .products {
