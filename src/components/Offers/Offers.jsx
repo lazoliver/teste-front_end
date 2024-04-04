@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./Offers.css";
 
@@ -38,7 +39,11 @@ export default function Offers() {
       <h2>Super Ofertas</h2>
       <div className="products">
         {products.map((product) => (
-          <a href="/p" key={product.id} className="item-card">
+          <Link
+            to={`/products/${product.id}`}
+            key={product.id}
+            className="item-card"
+          >
             <img src={product.image} alt={product.title} />
             <div className="item-info">
               <h4>{product.title}</h4>
@@ -46,9 +51,9 @@ export default function Offers() {
               <p className="other-price">
                 ou em 10x de {(product.price / 10).toFixed(2)}
               </p>
-              <a className="btn-buy">Comprar</a>
+              <p className="btn-buy">Comprar</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
