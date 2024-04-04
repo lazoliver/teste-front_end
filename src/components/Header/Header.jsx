@@ -1,10 +1,10 @@
 import "./Header.css";
 
-import Logo from "../../assets/logo.svg";
-import MobileLogo from "../../assets/mobile_logo.svg";
-import Cart from "../../assets/cart.svg";
-import CartCounter from "../../assets/cart_counter.svg";
-import SearchIcon from "../../assets/search_icon.svg";
+import Logo from "../../assets/images/logo.svg";
+import MobileLogo from "../../assets/images/mobile_logo.svg";
+import Cart from "../../assets/images/cart.svg";
+import CartCounter from "../../assets/images/cart_counter.svg";
+import SearchIcon from "../../assets/images/search_icon.svg";
 
 export default function Header() {
   return (
