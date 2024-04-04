@@ -82,3 +82,8 @@ teste-front_end/
 |-- package-lock.json
 |-- package.json
 ```
+
+## Deploy
+
+Para facilitar a visualização do projeto, é possível acessar ele rodando live [Aqui](https://teste-front-end-blond.vercel.app/), abaixo estão algumas métricas obtidas pelo Lighthouse:
+![Métricas Google Lighthouse](https://github.com/lazoliver/teste-front_end/blob/master/src/assets/images/image.png)
