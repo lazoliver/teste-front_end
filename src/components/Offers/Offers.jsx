@@ -27,11 +27,15 @@ export default function Offers() {
   }
 
   if (error) {
-    return <section className="offers">Error: {error}</section>;
+    return <section className="offers">
+      <h3 className="advertise">Error: {error}</h3>
+    </section>;
   }
 
   if (loading) {
-    return <section className="offers">Loading...</section>;
+    return <section className="offers">
+      <h3 className="advertise">Carregando...</h3>
+    </section>;
   }
 
   return (

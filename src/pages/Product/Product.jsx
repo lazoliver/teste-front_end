@@ -5,12 +5,13 @@ import "./Product.css";
 
 export default function Product() {
   const { id } = useParams();
-  const [product, setProduct] = useState([]);
+  const [product, setProduct] = useState();
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchProduct();
-  }, []);
+  });
 
   async function fetchProduct() {
     try {
@@ -20,13 +21,22 @@ export default function Product() {
       }
       const data = await response.json();
       setProduct(data);
+      setLoading(false);
     } catch (error) {
       setError(error.message);
     }
   }
 
   if (error) {
-    return <section className="offers">Error: {error}</section>;
+    return <section className="offers">
+      <h3 className="advertise">Error: {error}</h3>
+    </section>;
+  }
+
+  if (loading) {
+    return <section className="offers">
+      <h3 className="advertise">Carregando...</h3>
+    </section>;
   }
 
   return (
