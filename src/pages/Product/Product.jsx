@@ -28,19 +28,19 @@ export default function Product() {
   }
 
   if (error) {
-    return <section className="offers">
+    return <main className="offers">
       <h3 className="advertise">Error: {error}</h3>
-    </section>;
+    </main>;
   }
 
   if (loading) {
-    return <section className="offers">
+    return <main className="offers">
       <h3 className="advertise">Carregando...</h3>
-    </section>;
+    </main>;
   }
 
   return (
-    <section>
+    <main>
       {product && (
         <div className="product-page">
           <img src={product.image} alt={product.title} />
@@ -54,6 +54,6 @@ export default function Product() {
           </div>
         </div>
       )}
-    </section>
+    </main>
   );
 }
