@@ -29,7 +29,23 @@
   justify-content: space-evenly;
   padding: 6px 0 11px;
 }
-@media (min-width: 700px) {
+@media (min-width: 500px) and (max-width:919px) {
+  .footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer .container section:first-child{
+    grid-row-start: 1;
+  }
+  .footer .container section:nth-child(2){
+    grid-row-start: 1;
+  }
+  .footer .container .stamps {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media (min-width: 920px) {
   .footer {
     padding: 25px 0 37px;
   }
