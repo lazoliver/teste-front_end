@@ -1,0 +1,117 @@
+.offers {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 7px 21px;
+}
+.offers h2 {
+  border-bottom: 3.5px solid #c0c0c0;
+  font: 800 18px/25px inherit;
+  padding-bottom: 3px;
+  width: fit-content;
+}
+.products {
+  column-gap: 27px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  row-gap: 32px;
+}
+.item-card {
+  height: 264px;
+}
+.item-card img {
+  height: 122px;
+  padding: 5px;
+  width: 132px;
+}
+.item-card h4 {
+  color: #7a7a7a;
+  font: 600 10px/14px "Open Sans", sans-serif;
+  height: 100%;
+  text-align: center;
+}
+.item-info {
+  height: 144px;
+}
+.item-card,
+.item-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.price {
+  color: #000;
+  font: 700 16px/22px "Open Sans", sans-serif;
+}
+.other-price {
+  color: #7a7a7a;
+  font: 400 11px/15px "Open Sans", sans-serif;
+}
+.btn-buy {
+  align-items: center;
+  background-color: #000;
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  font: 400 15px / 21px "Open Sans", sans-serif;
+  min-height: 36px;
+  justify-content: center;
+  margin-top: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .offers {
+    margin: 0 auto;
+    max-width: 1161px;
+  }
+  .offers h2 {
+    border-bottom: 4px solid #c0c0c0;
+    font: 800 20px/27px "Open Sans", sans-serif;
+    padding-bottom: 3px;
+    width: fit-content;
+  }
+  .products {
+    column-gap: 99px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    row-gap: 105px;
+  }
+  .item-card {
+    height: 353px;
+  }
+  .item-card:hover .item-info {
+    background-color: #e6e8ea;
+    transition: ease all 0.8s;
+  }
+  .item-card:hover .item-info .btn-buy {
+    display: flex;
+  }
+  .item-card img {
+    min-height: 200px;
+    padding: 0;
+    min-width: 216px;
+  }
+  .item-info {
+    height: 153px;
+  }
+  .item-card h4 {
+    font: 700 12px/16px "Open Sans", sans-serif;
+    height: 50px;
+    overflow: hidden;
+    padding: 7px 5px 0;
+  }
+  .price {
+    font: 700 18px/24px "Open Sans", sans-serif;
+  }
+  .btn-buy {
+    background-color: #011e41;
+    display: none;
+    font: 700 12px/16px "Open Sans", sans-serif;
+    margin-bottom: 14px;
+    width: 125px;
+  }
+}
