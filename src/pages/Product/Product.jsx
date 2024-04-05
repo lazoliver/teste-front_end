@@ -28,15 +28,19 @@ export default function Product() {
   }
 
   if (error) {
-    return <main className="offers">
-      <h3 className="advertise">Error: {error}</h3>
-    </main>;
+    return (
+      <main className="offers">
+        <h3 className="advertise">Error: {error}</h3>
+      </main>
+    );
   }
 
   if (loading) {
-    return <main className="offers">
-      <h3 className="advertise">Carregando...</h3>
-    </main>;
+    return (
+      <main className="offers">
+        <h3 className="advertise">Carregando...</h3>
+      </main>
+    );
   }
 
   return (
@@ -50,7 +54,9 @@ export default function Product() {
             <p className="other-price">
               ou em 10x de {(product.price / 10).toFixed(2)}
             </p>
-            <p className="btn-buy">Comprar</p>
+            <button type="submit" className="btn-buy">
+              Comprar
+            </button>
           </div>
         </div>
       )}
