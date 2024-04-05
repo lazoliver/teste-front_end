@@ -27,15 +27,19 @@ export default function Offers() {
   }
 
   if (error) {
-    return <section className="offers">
-      <h3 className="advertise">Error: {error}</h3>
-    </section>;
+    return (
+      <section className="offers">
+        <h3 className="advertise">Error: {error}</h3>
+      </section>
+    );
   }
 
   if (loading) {
-    return <section className="offers">
-      <h3 className="advertise">Carregando...</h3>
-    </section>;
+    return (
+      <section className="offers">
+        <h3 className="advertise">Carregando...</h3>
+      </section>
+    );
   }
 
   return (
@@ -47,6 +51,7 @@ export default function Offers() {
             to={`/products/${product.id}`}
             key={product.id}
             className="item-card"
+            id={product.id}
           >
             <img src={product.image} alt={product.title} />
             <div className="item-info">
