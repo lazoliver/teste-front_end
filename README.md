@@ -44,7 +44,7 @@ Uma requisição do tipo GET para [https://fakestoreapi.com/products](https://fa
 ## Como executar o projeto
 
 1. É necessário ter o NodeJS versão 18.17.1 ou superior instalado na sua máquina. Você pode verificar a versão usando o comando `node -v`. Eu recomendo a instalação da versão mais recente do [NodeJS](https://nodejs.org/en);
-2. O NPM versão 10.4.0 ou superior é o gerenciador de pacotes utilizado nesse projeto. Verifique se já está instalado em sua máquina ou a versão com o comando `npm -v` no seu terminal. Caso o npm não esteja instalado ou esteja desatualizado, siga os passos de instalação do [site oficial](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm);``
+2. O NPM versão 10.4.0 ou superior é o gerenciador de pacotes utilizado nesse projeto. Verifique se já está instalado em sua máquina ou a versão com o comando `npm -v` no seu terminal. Caso o npm não esteja instalado ou esteja desatualizado, siga os passos de instalação do [site oficial](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm);
 3. O Git é a ferramenta usada para o controle de versões. O processo de versionamento deste projeto usou a versão 2.40.0 do Git. Verifique se já está instalado ou a versão do Git com o comando `git -v`. Caso necessário, é possível instalar o Git usando o [site oficial](https://git-scm.com/downloads);
 4. Clone o repositório do projeto no seu workspace local usando o endereço HTTPS: [https://github.com/lazoliver/teste-front_end.git](https://github.com/lazoliver/teste-front_end.git) e depois entre na pasta do projeto;
 5. Use o comando `npm i` para instalar os pacotes necessários para a execução do projeto;
