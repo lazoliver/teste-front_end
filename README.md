@@ -29,10 +29,10 @@ Uma requisição do tipo GET para [https://fakestoreapi.com/products](https://fa
 		"rating": {"rate": 3.9,"count": 120}
 	},
 	{
-	  "id": 2,
-	  "title": "<product-title>",
-	  "price": 22.3,
-	  "description": "<product-description>",
+		"id": 2,
+		"title": "<product-title>",
+		"price": 22.3,
+		"description": "<product-description>",
 		"category": "<product-category>",
 		"image": "<product-image>",
 		"rating": {"rate": 3.9,"count": 120}
